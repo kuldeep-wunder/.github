@@ -1,0 +1,7 @@
+{
+  "webhook_dispatcher": [
+    {
+      "ecr-repo": "kuldeep-test"
+    }
+  ]
+}
