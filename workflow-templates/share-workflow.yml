@@ -7,7 +7,7 @@ on:
         required: true
         default: 'All'
       stage:
-        description: ' new stage i.e. staging or prod only '
+        description: 'stage i.e. staging or prod only '
         required: true
         default: 'prod'
       project:
@@ -47,6 +47,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: make script executable
+      run: chmod +x deployment/client_list_verify.sh
+
+    - name: make it executable
       run: chmod +x deployment/client_list_verify.sh
 
 
